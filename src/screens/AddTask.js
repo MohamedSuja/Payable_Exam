@@ -107,9 +107,9 @@ const AddTask = ({ navigation, route }) => {
         value={taskDescription}
       />
       {route.params?.taskName && route.params?.taskDescription ? (
-        <CustomButton title={"Edit Task"} onPress={onPressAdd} />
+        <CustomButton title={"Edit Task"} onPress={onPressEdit} />
       ) : (
-        <CustomButton title={"Add Task"} onPress={onPressEdit} />
+        <CustomButton title={"Add Task"} onPress={onPressAdd} />
       )}
     </View>
   );
